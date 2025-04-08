@@ -66,7 +66,7 @@ def RUN(block):
 	model.add(Dense(n_steps_out))
 
 	model.compile(optimizer='adam', loss='mse')
-	net=model.fit(x_train, y_train, epochs=200,validation_split=0.2)
+	net=model.fit(x_train, y_train, epochs=201,validation_split=0.2)
 
 
 	predicteds=model.predict(x_test)
